@@ -1,0 +1,67 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+
+	setlocale(0, "");
+
+	int n;
+
+	do {
+
+		cout << "Введите целое число N = ";
+
+		cin >> n;
+
+		cout << endl;
+
+		if ((n > 0) & (n < 1000)) {
+
+			if (n % 2 == 0) {
+
+				cout << n << " - четное ";
+
+			}
+			else
+			{
+				cout << n << " - нечетное ";
+			}
+
+			if (n / 100 > 0) {
+
+				cout << "трёхзначное число!" << endl;
+				break;
+
+			}
+			else
+			{
+				if (n / 10 > 0) {
+
+					cout << "двузначное число!" << endl;
+					break;
+
+				}
+				else
+				{
+					cout << "однозначное число!" << endl;
+					break;
+				}
+			}
+
+		}
+		else
+		{
+			cout << "Введено некорректное число. Повторите попытку ..." << endl;
+			cout << endl;
+		}
+
+	} while (true);
+
+	cout << endl;
+
+	system("pause");
+
+	return 0;
+
+}
