@@ -1,0 +1,49 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+
+	setlocale(0, "");
+
+	int n;
+
+	cout << "Введите целое число N = ";
+
+	cin >> n;
+
+	cout << endl;
+
+	if (n == 0) {
+
+		cout << "Нулевое число!" << endl;
+
+	}
+	else
+	{
+		if (n < 0) {
+
+			cout << n << " - отрицательное ";
+
+		}
+		else
+		{
+			cout << n << " - положительное ";
+		}
+
+		if (n % 2 != 0) {
+
+			cout << "не";
+
+		}
+
+		cout << "четное число!" << endl;
+	}
+
+	cout << endl;
+
+	system("pause");
+
+	return 0;
+
+}
