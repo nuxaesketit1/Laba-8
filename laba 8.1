@@ -1,26 +1,23 @@
 #include <iostream>
 using namespace std;
-
-int main() {
-	int A,B,c;
-	cout << "A=";
-	cin >> A;
-	cout << "B=";
-	cin >> B;
-	if (A>B) { 
-	c=A;
-	B=c;
-	}
-	else if (B>A) { 
-	c=B;
-	A=B;
-	}
-	else if (A==B) { 
-	c=0;
-	A=c;
-	B=c;
-	}
-	cout << "A=" << A << endl;
-	cout << "B=" << B << endl;
-	return 0;
+int main()
+{
+    cout<<"Vvedite chisla"<<endl;
+    int a,b,max;
+    cin>>a>>b;
+        if (a>b) {
+            max=a;
+        }
+        else {
+            max=b;
+        }
+    if (a==b) {
+        a=0;
+        b=0;
+    }
+    else {
+        a=max;
+        b=max;
+    }
+    cout<<"A="<<a<<", B="<<b<<endl;
 }
